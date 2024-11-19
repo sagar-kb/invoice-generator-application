@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+.footer li {
+  @apply py-1;
+}
+
+.footer li:not(:last-child) {
+  @apply border-r border-gray-300 pr-4 mr-4;
+}
